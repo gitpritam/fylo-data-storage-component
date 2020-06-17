@@ -1,0 +1,178 @@
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+    
+    background-color: #0C122C;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.4rem;
+    color: hsl(243, 100%, 93%);
+    max-width: 144rem;
+    background-image: url(../images/bg-desktop.svg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100%;   
+}
+
+.container {
+    max-width: 60%;
+    margin: auto;
+    padding-top: 20rem;
+}
+
+.left-box, .right-box {
+    display: inline-block;
+}
+.left-box {
+    background-color: hsl(228, 56%, 26%);
+    padding: 3.9rem;
+    border-radius: .6rem;
+    border-top-right-radius: 10rem;
+    width: 38%;
+}
+
+
+.left-box__icons {
+   margin-top: 2rem;
+}
+
+.logo-img {
+    width: auto;
+    height: 2.7rem;
+}
+.left-box__icons > .icon {
+    background-color: hsl(229, 57%, 11%);
+    display: inline-block;
+    height: 3rem;
+    width: 3rem;
+    position: relative;
+    border-radius: 5px;
+}
+
+.icon-img {
+    height: 1.2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.icon-img-document {
+    height: 1.7rem;
+}
+.icon-img-folder{
+    height: 1.4rem;
+}
+
+.left-box__icons .icon:not(:last-child) {
+    margin-right: 1rem;
+}
+
+
+/***************************************************/
+
+
+.right-box {
+    
+    width: 60%;
+    float: right;
+    position: relative;
+
+}
+.tooltip {
+    position: absolute;
+    right: 4rem;
+    top: 0;
+    color: #000;
+    font-weight: 700;
+    height: 6rem;
+    width: 15rem;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    line-height: 5.5rem;
+}
+.tooltip::after{
+    content: "";
+    position: absolute;
+    top: 66%;
+    right: 0;
+    border-width: 20px;
+    border-style: solid;
+    border-color:transparent   transparent  transparent rgb(255, 255, 255);
+    transform: rotateY(550deg);
+} 
+
+.tooltip-text {
+    color: hsl(229, 7%, 55%);
+    font-size: .8rem;
+}
+
+.tooltip-number {
+    color: #000;
+    font-size: 3rem;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.container-bar, 
+.bar,
+.round-shape {
+    border-radius: 2rem;
+}
+
+.container-right {
+    width: 100%;
+    margin: 0 auto;
+    padding: 3rem;
+    margin-top: 4rem;
+    background-color: hsl(228, 56%, 26%);
+    border-radius: .6rem;
+}
+
+.container-bar {
+    width: 100%;
+    margin: 2rem auto 1rem;
+    background-color: hsl(229, 57%, 11%);
+}
+
+.bar {
+    width: 81.5%;
+    background-image: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    height: 1.5rem;
+    position: relative;
+}
+
+.round-shape {
+    background-color: #fff;
+    position: absolute;
+    top:.2rem;
+    right: .2rem;
+    height: 1rem;
+    width: 1rem;
+}
+
+.min {
+    float: left;
+}
+.max {
+    float: right;
+}
+
+/********************************************/
+.attribution {
+    margin-top: 18%;
+}
