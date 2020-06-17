@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/query.css  ">
+  <title>Frontend Mentor | Fylo data storage component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="left-box">
+      <div class="left-box__logo">
+        <img class="logo-img"src="images/logo.svg" alt="fylo logo">
+      </div>
+      <div class="left-box__icons">
+        <span class="icon"><img class="icon-img icon-img-document" src="images/icon-document.svg" alt="document icon"></span>
+        <span class="icon"><img class="icon-img icon-img-folder" src="images/icon-folder.svg" alt="folder icon"></span>
+        <span class="icon"><img class="icon-img icon-img-upload" src="images/icon-upload.svg" alt="upload icon"></span>
+      </div>
+    </div>
+    <div class="right-box">
+      <div class="tooltip">
+        <p class="tooltip-text"><span class="bold tooltip-number">185 </span>GB LEFT</p>
+      </div>
+     
+      <div class="container-right">
+        <p>You’ve used <span class="bold">815 GB</span>of your storage</p>
+        <div class="container-bar">
+          <div class="bar">
+            <span class="round-shape">&nbsp</span>
+          </div>
+        </div>
+        <div class="min-max">
+          <span class="min bold">0 GB</span>
+          <span class="max bold">1000 GB</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Pritam Majhi</a>.
+  </div>
+</body>
+</html>
+
+<!-- You’ve used 815 GB of your storage
+
+185 GB Left
+
+0 GB
+1000 GB -->
